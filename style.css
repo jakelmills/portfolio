@@ -1,5 +1,70 @@
 body {
   font-family: Helvetica, Arial, sans-serif;
-  background-color: #666;
-  height: 100vh;
+  background-color: white;
+  color: blue;
+}
+
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
+
+.inner-wrapper {
+  margin: 40px auto;
+  width: 80%;
+  overflow: none;
+}
+
+h1 {
+  font-size: 16em;
+  font-weight: 700;
+}
+
+.project-container {
+  margin-top: 160px;
+  position: relative;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.project-container:hover {
+  transform: scale(0.95);
+}
+
+main > div:first-of-type{
+  margin-top: 80px;
+}
+
+.project-img {
+  background-color: rgba(0,0,0,0.2);
+  width: 1000px;
+  height: 600px;
+}
+
+.project-title {
+  font-size: 12em;
+  font-weight: 700;
+  text-align: right;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+}
+
+footer {
+  margin-top: 160px;
+  margin-bottom: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+footer a {
+  text-align: center;
+  font-size: 12em;
+  font-weight: 700;  
+  transition: transform 0.5s ease;
+}
+
+footer a:hover {
+  transform: scale(0.95)
 }
