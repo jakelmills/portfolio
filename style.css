@@ -1,7 +1,11 @@
 body {
   font-family: Helvetica, Arial, sans-serif;
-  background-color: white;
+  background-color: #F9F6EE;
   color: blue;
+}
+
+a {
+  text-decoration: underline 16px;
 }
 
 a, a:visited, a:hover, a:active {
@@ -14,40 +18,45 @@ a, a:visited, a:hover, a:active {
   overflow: none;
 }
 
-h1 {
-  font-size: 16em;
+.title {
+  font-size: 12em;
   font-weight: 700;
+
 }
 
 .project-container {
-  margin-top: 160px;
+  margin-top: 100px;
   position: relative;
   width: 100%;
-  transition: transform 0.5s ease;
-}
-
-.project-container:hover {
-  transform: scale(0.95);
-}
-
-main > div:first-of-type{
-  margin-top: 80px;
+  overflow-y: hidden;
+  overflow-x: visible;
 }
 
 .project-img {
   background-color: rgba(0,0,0,0.2);
-  width: 1000px;
-  height: 600px;
+  width: 70%;
+  height: 450px;
 }
 
 .project-title {
-  font-size: 12em;
+  font-size: 7.5rem;
   font-weight: 700;
-  text-align: right;
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translateY(-50%);
+  right: 15%;
+  max-width: 300px;
+  -webkit-text-stroke: 1px rgba(255,255,255,0.5);
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.25s ease-in, transform 0.5s ease-in;
+  transform: translateY(100%);
+}
+
+.fade-in.appear {
+  opacity: 1;
+  transform: translateY(-50%)
 }
 
 footer {
@@ -60,11 +69,7 @@ footer {
 
 footer a {
   text-align: center;
-  font-size: 12em;
+  font-size: 8em;
   font-weight: 700;  
-  transition: transform 0.5s ease;
 }
 
-footer a:hover {
-  transform: scale(0.95)
-}
